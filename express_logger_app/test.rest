@@ -1,0 +1,10 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/400
+
+###
+GET http://localhost:3000/500
+
+###
+Get http://localhost:3000/error
