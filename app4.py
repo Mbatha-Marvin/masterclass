@@ -106,4 +106,5 @@ class Add(Resource):
 api.add_resource(Add, '/')
 
 if __name__ == '__main__':
+    print("App is running on localhost:8080")
     serve(app, host='0.0.0.0', port=8080)
