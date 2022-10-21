@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const {
+    getMovie,
     getMovies, 
     setMovie, 
     updateMovie, 
@@ -9,7 +10,7 @@ const {
 
 router.route('/').get(getMovies).post(setMovie)
 // router.get('/', getMovies)
-
+router.route('/movie').get(getMovie)
 // router.post('/', setMovie)
 
 router.route('/:id').put(updateMovie).delete(deleteMovie)
