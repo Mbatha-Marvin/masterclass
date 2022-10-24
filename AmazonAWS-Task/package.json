@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "createdb": "node fetchData.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,9 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "mongodb": "^4.11.0",
     "mongoose": "^6.6.7",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2"
   }
 }
