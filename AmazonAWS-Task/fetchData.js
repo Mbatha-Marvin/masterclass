@@ -3,11 +3,8 @@ const MongoClient = require('mongodb').MongoClient
 
 const url = "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json"
 
-
 //fetch the data and create a database
 async function run(){
-
-    
     let json =[]
     request.get(url, async (err, res, body) => {
         json = await JSON.parse(body)
@@ -40,10 +37,6 @@ async function run(){
         await client.close()
         console.log("connection closed")
     })
-        
-    
 }
 
 run().catch(console.dir);
-
- 
